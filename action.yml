@@ -1,0 +1,5 @@
+name: "PR Labeler"
+description: "Label your PRs based on actions performed"
+runs:
+  using: "node20"
+  main: "index.js"
