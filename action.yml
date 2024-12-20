@@ -1,5 +1,14 @@
 name: "PR Labeler"
 description: "Label your PRs based on actions performed"
+inputs:
+  needs-review-label:
+    description: "Label to be added to the PR when it's created"
+    required: true
+    default: "waiting-on-review"
+  needs-dev-label:
+    description: "Label to be added to the PR when it's reviewed"
+    required: true
+    default: "waiting-on-dev"
 runs:
   using: "node20"
   main: "index.js"
